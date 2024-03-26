@@ -1,17 +1,43 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-        System.out.println("halllooooooo");
-        System.out.println("helo world");
+        
+        Anjing anjing1 = new Anjing("Bobby", "Golden Retriever", 3, "Emas", "Jantan", "Coklat");
+        Anjing anjing2 = new Anjing("Luna", "Labrador Retriever", 2, "Hitam", "Betina", "Hitam");
+        Anjing anjing3 = new Anjing("Max", "Siberian Husky", 5, "Abu-abu", "Jantan", "Putih");
 
+        
+        System.out.println("=== Anjing 1 ===");
+        anjing1.tampilkanInfo();
+        anjing1.menggonggong();
+        anjing1.makan();
+        anjing1.tidur();
+        System.out.println();
+
+        System.out.println("=== Anjing 2 ===");
+        anjing2.tampilkanInfo();
+        anjing2.menggonggong();
+        anjing2.makan();
+        anjing2.tidur();
+        System.out.println();
+
+        System.out.println("=== Anjing 3 ===");
+        anjing3.tampilkanInfo();
+        anjing3.menggonggong();
+        anjing3.makan();
+        anjing3.tidur();
+        System.out.println();
+
+        System.out.println("=== Anjing 4 ===");
+        Anjing anjing4 = Anjing.kawin(anjing1, anjing2, "Iggy");
+        anjing4.tampilkanInfo();
+        anjing4.menggonggong();
+        anjing4.makan();
+        anjing4.tidur();
+        System.out.println();
         for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+            anjing4.ulangTahun();
         }
+        anjing4.tampilkanInfo();
+
     }
 }
